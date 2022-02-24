@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./the-liquid.ttf');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'BodyFont';
+    src: url('./ramphal.otf');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'BodyFont';
+    /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+    color: whitesmoke;
+    background-image: url("./jap-waves.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    margin: 5px;
+}
+
+button {
+    font-family: 'BodyFont';
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: rgba(0, 23, 29, 0.534);
+    border-style: solid;
+    border-radius: 5px;
+    padding: 8px;
+    transition: all .07s ease;
+}
+
+img {
+   height: 200px;
+   width: auto; 
+   object-fit: cover;
+   border-radius: 35%;
+   border-style: double;
+   border-color: rgba(75, 154, 165, 0.795);   
+   border-width: 8px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    width: 1030px;
+}
+
+.header {
+    font-family: 'MyFont';
+    width: 1030px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    border-width: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    margin: 3px;
+    padding: 8px;
+    background-color: rgba(0, 21, 41, 0.856);
+}
+
+h1.restaurant-name {
+    padding: 15px;
+    font-size: 70px;
+    padding-bottom: 3px;
+}
+
+h3.restaurant-name {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.tabs {
+    display: flex;
+    column-gap: 140px;
+}
+
+.info {
+    width: 1030px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    border-width: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    margin: 3px;
+    padding: 8px;
+    background-color: rgba(0, 21, 41, 0.856);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.intro {
+    margin: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.home-img {
+    height: 350px;
+    width: 450px;
+    border-radius:50%;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.meal {
+    flex: 0;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 340px;
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 10px;
+    border-radius: 20px;
+    transition: all .07s ease;
+}
+
+h4.name {
+    font-size: 22px;
+    margin: 5px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    row-gap: 10px;
+}
+
+.map {
+    border-radius: 10px;
+    border-style: none;
+}
+
+.footer {
+    width: 1055px;
+    display: flex;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.849);
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.selected {
+    background-color: rgba(114, 114, 114, 0.685);
+    color: rgb(27, 39, 51);
+    border-style: none;
+    transform: scale(1.05);
+}
+
+.hovered {
+    background-color: rgba(114, 114, 114, 0.685);
+    transform: scale(1.05);
+}
