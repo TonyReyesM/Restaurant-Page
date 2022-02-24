@@ -192,7 +192,10 @@ function contactTab () {
 }
 
 const content = document.getElementById('content')
-content.append(headerCreate());
+
+const header = headerCreate();
+
+content.append(header);
 
 const homeBtn = document.querySelector('.home-button')
 const menuBtn = document.querySelector('.menu-button')
@@ -203,9 +206,11 @@ homeBtn.addEventListener('click', () => {
     menuBtn.classList.remove('selected')
     contactBtn.classList.remove('selected')
 
+    const home = homeTab()
+
     const infoSec = document.querySelector('.info');
     infoSec.removeChild(document.querySelector('.tab'))
-    infoSec.append(homeTab())
+    infoSec.append(home)
 })
 
 menuBtn.addEventListener('click', () => {
@@ -213,9 +218,11 @@ menuBtn.addEventListener('click', () => {
     menuBtn.classList.add('selected')
     contactBtn.classList.remove('selected')
 
+    const menu = menuTab()
+
     const infoSec = document.querySelector('.info');
     infoSec.removeChild(document.querySelector('.tab'))
-    infoSec.append(menuTab())
+    infoSec.append(menu)
 
     const meals = document.querySelectorAll('.meal')
     meals.forEach(meal => meal.addEventListener('mouseover', () => meal.classList.add('hovered')));
@@ -227,11 +234,16 @@ contactBtn.addEventListener('click', () => {
     menuBtn.classList.remove('selected')
     contactBtn.classList.add('selected')
 
+    const contact = contactTab()
+
     const infoSec = document.querySelector('.info');
     infoSec.removeChild(document.querySelector('.tab'))
-    infoSec.append(contactTab())
+    infoSec.append(contact)
 })
 
-content.append(infoSecCreate());
+const infoSec = infoSecCreate();
+const footer = footerCreate();
 
-content.append(footerCreate())
+content.append(infoSec);
+
+content.append(footer);
